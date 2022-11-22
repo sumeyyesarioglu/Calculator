@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+body{
+    font-size: 1.2rem;
+}
+.calculator {
+    border: 1px solid #ccc;
+    border-radius:5px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#calculator-input {
+    width: 100%;
+    height: 70px;
+    font-size:4rem;
+    background-color: #252525;
+    color:#fff;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: right;
+}
+button {
+    background-color: #fff;
+    height: 50px;
+    border-radius: 3px;
+    border: 1px solid #c4c4c4;
+    background-color: transparent;
+    color: #333;
+    font-size: 2.5rem;
+}
+button:hover {
+    background-color: #eaeaea;
+}
+.operator {
+    color: #337cac;
+}
+.clear {
+    background-color: #f0595f;
+    border-color: #b0353a;
+    color: #fff;
+}
+.clear:hover {
+    background-color: #f17377;
+}
+.equal-sign-operator{
+    background-color: #2e86c0;
+    border-color: #337cac;
+    color: #fff;
+    grid-area:2/4/6/5 ;/*2.satır 4.butona gitmeyi sağlıyor , 6/5 ise elemanların altında dizilmemesi sağlıyo 6.satır 5.bölüm */
+    height: 100%;
+    
+}
+.equal-sign-operator:hover{
+    background-color: #4e9ed4;
+}
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);/* colonda 4 tane sıralanıp yüzde 1fr genişliğinde eşitlenmesi sağlanıyor*/
+
+    grid-gap: 20px;/*Elemanlar arası boşluk bıraktırıyor*/
+    padding: 20px;
+}
